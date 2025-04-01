@@ -21,7 +21,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/login', formData);
+      const response = await axios.post('https://chatsphere-fusion-5.onrender.com', formData);
       console.log(response.data.message);
       navigate('/components/Main');
     } catch (err) {

@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // Database connection
-mongoose.connect('mongodb://localhost:27017/vite-login', {
+mongoose.connect('mongodb://127.0.0.1:27017/vite-login', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
